@@ -4,11 +4,6 @@
 # Global labels:
 	.global _start
 
-# Doubleword sizes.
-	.equ d1, 8
-
-	.equ d1n, -8
-
 _start:
         # Load the address of a big number, already stored by the compiler before program execution.
 	la a0, big_num
