@@ -29,7 +29,7 @@ _start:
 	la a0, data_ptr
         ld a0, 0(a0)
 
-	# Load the contents of the dmord in the .data section.
+	# Load the contents of the dword in the .data section.
 	ld a0, 0(a0)
 
         # Print it.
