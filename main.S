@@ -16,6 +16,8 @@ _start:
 	# But first, load the address of the print routine, stored by the linker, before program execution.
         la t0, prthex_addr
         ld t0, 0(t0)
+
+        # Run the print routine.
         jalr t0
 
  	# Print a new line.
@@ -30,7 +32,7 @@ _start:
         ld a0, 0(a0)
 
 	# Load the contents of the dword in the .data section.
-	ld a0, 0(a0)
+	ld a0, 0(a0)       # Optionally an sd, sw, sh, or sb command could be used to store data. 
 
         # Print it.
         la t0, prthex_addr
