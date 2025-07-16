@@ -1,5 +1,5 @@
 
-Loading 64-bit addresses and large 64-bit numbers with 32-bit RISC-V Assembler Language instructions can be cumbersome.
+Loading 64-bit addresses and 64-bit numbers with 32-bit RISC-V Assembler Language instructions can be cumbersome.
 
 The main.S program lets the compiler and linker do most of the work.
 
